@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 851614499}
-  isRight: 0
+  isRight: 1
   manager: {fileID: 1056623442}
 --- !u!61 &371086351
 BoxCollider2D:
