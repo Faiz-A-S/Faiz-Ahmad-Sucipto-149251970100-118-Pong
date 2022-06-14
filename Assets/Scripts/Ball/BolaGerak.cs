@@ -16,14 +16,14 @@ public class BolaGerak : MonoBehaviour
 
     public void ActivatePUSpeedUp(float magnitude) 
     { 
-        if(rig.velocity.x <= 13){
+        if(rig.velocity.x <= 15f){
            rig.velocity *= magnitude;
         }
     }
 
     public void ActivateSmallBall(Vector3 multiplier)
     {
-        if(transform.localScale.x <= 0.2f){
+        if(transform.localScale.x >= 0.3f){
             transform.localScale -= new Vector3(multiplier.x,multiplier.y); 
         }
     }
