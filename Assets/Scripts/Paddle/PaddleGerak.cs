@@ -7,10 +7,15 @@ public class PaddleGerak : MonoBehaviour
     public float cepatGerak;
     public KeyCode up;
     public KeyCode down;
+    public Collider2D ball;
+
+    private int turn;
     private Rigidbody2D rig; 
+    
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(turn);
         rig = GetComponent<Rigidbody2D>(); 
     }
 
@@ -41,5 +46,10 @@ public class PaddleGerak : MonoBehaviour
     private void MoveObject(Vector2 gerak){
         Debug.Log("Paddle Speed: " + gerak); 
         rig.velocity = gerak; 
+    }
+
+    public void ActivatePaddleSpeed(float multiplier)
+    {
+        cepatGerak += multiplier;
     }
 }
