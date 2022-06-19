@@ -47,7 +47,7 @@ public class PaddleGerak : MonoBehaviour
 
     //update posisi paddle
     private void MoveObject(Vector2 gerak){
-        //Debug.Log("Paddle Speed: " + gerak); 
+        Debug.Log("Paddle Speed: " + gerak); 
         rig.velocity = gerak; 
     }
 
