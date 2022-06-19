@@ -28,8 +28,8 @@ public class PowerUpManager : MonoBehaviour
         timer += Time.deltaTime; 
         deTimer += Time.deltaTime; 
 
-        Debug.Log(timer);
-        Debug.Log(deTimer);
+        //Debug.Log(timer);
+        //Debug.Log(deTimer);
 
         if (timer > spawnInterval) 
         { 

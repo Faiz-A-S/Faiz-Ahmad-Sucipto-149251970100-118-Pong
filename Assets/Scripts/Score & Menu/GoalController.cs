@@ -14,10 +14,12 @@ public class GoalController : MonoBehaviour
         { 
             if (isRight) 
             { 
+                Debug.Log("GOOOOLL");
                 manager.AddRightScore(1); 
             } 
             else 
             { 
+                Debug.Log("GOOOOLL");
                 manager.AddLeftScore(1); 
             } 
         } 
